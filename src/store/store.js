@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import MarkDownSlice from "./Slices/MarkDownSlice";
+import MarkDownSlice from "./MarkDownSlice/MarkDownSlice";
 
 export const store = configureStore({
   reducer: {

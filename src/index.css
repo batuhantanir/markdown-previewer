@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --cp-color-1-hsl: 226.67deg 12% 85.29%;
+  --cp-color-1: hsl(var(--cp-color-1-hsl));
+  --cp-color-2-hsl: 228.39deg 12.25% 50.39%;
+  --cp-color-2: hsl(var(--cp-color-2-hsl));
+}
+* {
+  font-family: "Space Mono", monospace;
+},
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--cp-color-2);
+  border-radius: 1px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--cp-color-1);
+}
